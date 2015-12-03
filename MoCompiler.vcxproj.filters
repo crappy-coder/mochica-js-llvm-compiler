@@ -1,0 +1,1480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Text">
+      <UniqueIdentifier>{bc8894e2-564d-4880-81b2-61f312bb6812}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime">
+      <UniqueIdentifier>{62c11a6d-2484-4752-a48e-5a84d38a4467}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{eb5ff720-4ef6-44ba-a1bb-f629f76ba810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser">
+      <UniqueIdentifier>{2e58642f-5b00-4af9-9ff8-fafc03426e4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeGen">
+      <UniqueIdentifier>{e6a07cff-f121-445b-aa0a-0fa7b5848b0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AST">
+      <UniqueIdentifier>{4e8404fe-b709-49e5-b93c-99059b7cb887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API">
+      <UniqueIdentifier>{fba52c09-4251-4272-a9fc-c913362319f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Win">
+      <UniqueIdentifier>{24a66de3-aab7-4975-84d2-a645511c31e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{fe043778-01db-45e7-a0dc-6a8fe21a87a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Runtime\Tables">
+      <UniqueIdentifier>{313d384f-b055-4fec-b060-d785d3e74e02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\double-conversion">
+      <UniqueIdentifier>{848f7a4b-2231-4ddd-bd2c-4f4d4f357be6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Platform\Configuration.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\Macros.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\Win\Platform.h">
+      <Filter>Platform\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\Libs.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\Types.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Text\ASCII.h">
+      <Filter>Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Text\Unicode.h">
+      <Filter>Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\Lexer.h">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\SourceCode.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Text\UTF8String.h">
+      <Filter>Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\GlobalContext.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\KnownIdentifiers.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\KnownIdentifierNames.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\Token.h">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\TokenType.h">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="Text\Text.h">
+      <Filter>Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\LexerCharacterTypes.h">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\Parser.h">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\Node.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\Expression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ResultKind.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\NodeType.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\Statement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\NullExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\BooleanExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\NumberExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\StringExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ThrowableExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ThrowableSubExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ThrowablePrefixedSubExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\RegExExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ThisExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ResolvableExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\Element.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ArrayExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\PropertyNode.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\PropertyListNode.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ObjectLiteralExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\BracketAccessorExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\DotAccessorExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ArgumentListNode.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ArgumentsNode.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\NewExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\EvalFunctionCallExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ValueFunctionCallExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ResolveFunctionCallExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\BracketFunctionCallExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\DotFunctionCallExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\CallDotFunctionCallExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ApplyDotFunctionCallExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\PrePostResolveExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\PostfixResolveExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\Operators.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\PostfixBracketExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\PostfixDotExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\PostfixErrorExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\DeleteResolveExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\DeleteBracketExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\DeleteDotExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\DeleteValueExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\VoidExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\TypeOfResolveExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\TypeOfValueExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\PrefixBracketExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\PrefixDotExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\PrefixErrorExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\PrefixResolveExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\UnaryExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\OpCodes.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\UnaryPlusExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\NegateExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\BitwiseNotExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\LogicalNotExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\BinaryExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\MultiplyExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\DivideExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ModulusExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\AddExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\SubtractExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\LeftShiftExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\RightShiftExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\RightShiftUnsignedExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\LessExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\GreaterExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\LessEqualExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\GreaterEqualExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ThrowableBinaryExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\InstanceOfExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\InExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\EqualExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\NotEqualExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\EqualStrictExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\NotEqualStrictExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\LogicalExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ConditionalExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ReadModifyResolveExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\AssignResolveExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ReadModifyBracketExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\AssignBracketExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\AssignDotExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ReadModifyDotExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\AssignErrorExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\CommaExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ConstDeclExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ConstStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\StatementList.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\BlockStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\EmptyStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\DebuggerStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ExpressionStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\VarStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\IfStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\IfElseStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\DoWhileStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\WhileStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ForStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ForInStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ContinueStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\BreakStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ReturnStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\WithStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\LabelStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ThrowStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\TryStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ParameterNode.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ScopedStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ProgramNode.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\EvalStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\FunctionExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\FunctionDeclStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\CaseClauseNode.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ClauseListNode.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\CaseBlockNode.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\SwitchStatement.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\SwitchInfo.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\CodeFeatures.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\VariableList.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\FunctionList.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\AST.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ASTContext.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ASTDecls.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\PropertyType.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSValue.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\Extras.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\BitwiseAndExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\BitwiseOrExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\BitwiseXOrExpression.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\ParserScope.h">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\ParserMacros.h">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IREmitter.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\LLVM.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRType.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRScope.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSValueData.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSValueTags.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSObject.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSConvert.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSWrappedObject.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSObjectType.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSTypePreference.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSGlobalObject.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSStackFrame.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSStubDefs.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\StubCall.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRTypeBuilder.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRTypes.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRCodeGen.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\LLVMDecls.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRConsts.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Hash.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSClassInfo.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSClassFunctionTable.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSPropertyAttributes.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\Win\PlatformConfiguration.h">
+      <Filter>Platform\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSNumberConstructor.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSConstructorFunction.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSObjectPrototype.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSFunctionPrototype.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSNumberPrototype.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSValueWrapper.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\Tables\JSNumberPrototypeTable.h">
+      <Filter>Runtime\Tables</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\Tables\JSNumberConstructorTable.h">
+      <Filter>Runtime\Tables</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSClassPropertyTable.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSPropertyMap.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\Tables\JSObjectPrototypeTable.h">
+      <Filter>Runtime\Tables</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSFunction.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSFunctionConstructor.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\StringTable.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSExecutionEnvironment.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSScriptEnvironment.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSObjectEnvironment.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSPropertyDescriptor.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSGetterSetter.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSErrorType.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSPropertySlot.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRStubEmitter.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSPutPropertySlot.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\StubNames.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Common.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\AutoBuffer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IID.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ValueWrapper.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\Tables\JSGlobalObjectTable.h">
+      <Filter>Runtime\Tables</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\SymbolTable.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRValue.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSList.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSObjectConstructor.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\Tables\JSObjectConstructorTable.h">
+      <Filter>Runtime\Tables</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSString.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSStringRope.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\MemAlloc.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSSmallStrings.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSStrings.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\Tables\JSStringConstructorTable.h">
+      <Filter>Runtime\Tables</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\Tables\JSStringPrototypeTable.h">
+      <Filter>Runtime\Tables</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSStringConstructor.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSStringPrototype.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSStringInstance.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSNumberInstance.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\Tables\JSBooleanPrototypeTable.h">
+      <Filter>Runtime\Tables</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSBooleanInstance.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSBooleanPrototype.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSBooleanConstructor.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSNumericStringCache.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Numbers.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\bignum.h">
+      <Filter>Core\double-conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\bignum-dtoa.h">
+      <Filter>Core\double-conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\cached-powers.h">
+      <Filter>Core\double-conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\diy-fp.h">
+      <Filter>Core\double-conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\double-conversion.h">
+      <Filter>Core\double-conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\fast-dtoa.h">
+      <Filter>Core\double-conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\fixed-dtoa.h">
+      <Filter>Core\double-conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\ieee.h">
+      <Filter>Core\double-conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\strtod.h">
+      <Filter>Core\double-conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\utils.h">
+      <Filter>Core\double-conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\BasicStreamBuffer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\TeeStream.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\BitOps.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\Tables\JSErrorPrototypeTable.h">
+      <Filter>Runtime\Tables</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSErrorPrototype.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSErrorInstance.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSErrorConstructor.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSNativeErrorConstructor.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSNativeErrorPrototype.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSErrors.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\LLVMUtils.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRCodeGenAnnotationWriter.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\ASTUtils.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSPropertyNameIterator.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSPropertyNameList.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="AST\FunctionNode.h">
+      <Filter>AST</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRFunctionScope.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRFunctionType.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRFunctionTable.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRExceptionHandlingHazards.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRFunctionAttributes.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRPerformFinallyCleanup.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRJumpDestination.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRAutoCleanupScope.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRCleanupStack.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRCleanup.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeGen\IRPerformCatchCleanup.h">
+      <Filter>CodeGen</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSNativeExceptionData.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSNativeExceptionHandler.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSNativeStackFrame.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSNativeStubArgument.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform\StackInfo.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSStackBuffer.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime\JSCallFrame.h">
+      <Filter>Runtime</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Text\Unicode.cpp">
+      <Filter>Text</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Parser\Lexer.cpp">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\SourceCode.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Text\UTF8String.cpp">
+      <Filter>Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\GlobalContext.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\KnownIdentifiers.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\Parser.cpp">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\Statement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\BooleanExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\NumberExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\StringExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\RegExExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\Element.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ArrayExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\PropertyNode.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\PropertyListNode.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ObjectLiteralExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\BracketAccessorExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\DotAccessorExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ArgumentListNode.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ArgumentsNode.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\NewExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\EvalFunctionCallExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ValueFunctionCallExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ResolveFunctionCallExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\BracketFunctionCallExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\DotFunctionCallExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\CallDotFunctionCallExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ApplyDotFunctionCallExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\PrePostResolveExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\PostfixResolveExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\PostfixBracketExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\PostfixDotExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\PostfixErrorExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\DeleteResolveExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\DeleteBracketExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\DeleteDotExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\DeleteValueExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\VoidExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\TypeOfResolveExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\TypeOfValueExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\PrefixBracketExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\PrefixDotExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\PrefixErrorExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\PrefixResolveExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\UnaryExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\UnaryPlusExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\NegateExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\BitwiseNotExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\LogicalNotExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\BinaryExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\MultiplyExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ModulusExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\DivideExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\AddExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\SubtractExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\LeftShiftExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\RightShiftExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\RightShiftUnsignedExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\LessExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\GreaterExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\LessEqualExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\GreaterEqualExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ThrowableBinaryExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\InstanceOfExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\InExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\EqualExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\NotEqualExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\EqualStrictExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\NotEqualStrictExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\LogicalExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ConditionalExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ReadModifyResolveExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\AssignResolveExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ReadModifyBracketExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\AssignBracketExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\AssignDotExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ReadModifyDotExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\AssignErrorExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\CommaExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ConstDeclExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ConstStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\BlockStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\EmptyStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\DebuggerStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ExpressionStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\VarStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\IfStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\IfElseStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\DoWhileStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\WhileStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ForStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ForInStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ContinueStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\BreakStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ReturnStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\WithStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\LabelStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ThrowStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\TryStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ParameterNode.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ScopedStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ProgramNode.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\EvalStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\FunctionExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\FunctionDeclStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\CaseClauseNode.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ClauseListNode.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\CaseBlockNode.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\SwitchStatement.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ASTContext.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSValue.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\BitwiseAndExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\BitwiseOrExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\BitwiseXOrExpression.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeGen\IREmitter.cpp">
+      <Filter>CodeGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSConvert.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSWrappedObject.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSObject.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSValueST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSGlobalObject.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSStackFrame.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSGlobalObjectST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeGen\IRCodeGen.cpp">
+      <Filter>CodeGen</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeGen\IRTypeBuilder.cpp">
+      <Filter>CodeGen</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeGen\IREmitterAST.cpp">
+      <Filter>CodeGen</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeGen\IRConsts.cpp">
+      <Filter>CodeGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Hash.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSNumberConstructor.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSConstructorFunction.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSObjectPrototype.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSFunctionPrototype.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSNumberPrototype.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSClassPropertyTable.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSPropertyMap.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSObjectST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSFunction.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSFunctionConstructor.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\StringTable.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSExecutionEnvironment.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSScriptEnvironment.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSObjectEnvironment.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSGetterSetter.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSPropertyDescriptor.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSPropertySlot.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeGen\IRStubEmitter.cpp">
+      <Filter>CodeGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\Extras.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSFunctionST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeGen\SymbolTable.cpp">
+      <Filter>CodeGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSObjectConstructor.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSConstructorFunctionST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSObjectConstructorST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSFunctionConstructorST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSNumberConstructorST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSString.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSStringST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSStringRope.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSStringRopeST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSSmallStrings.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSStringConstructor.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSStringPrototype.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSStringInstance.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSStringConstructorST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSStringInstanceST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSStringPrototypeST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSNumberInstance.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSNumberInstanceST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSNumberPrototypeST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSBooleanInstance.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSBooleanInstanceST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSBooleanPrototype.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSBooleanPrototypeST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSBooleanConstructor.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSBooleanConstructorST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Numbers.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\bignum.cc">
+      <Filter>Core\double-conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\bignum-dtoa.cc">
+      <Filter>Core\double-conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\cached-powers.cc">
+      <Filter>Core\double-conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\diy-fp.cc">
+      <Filter>Core\double-conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\double-conversion.cc">
+      <Filter>Core\double-conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\fast-dtoa.cc">
+      <Filter>Core\double-conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\fixed-dtoa.cc">
+      <Filter>Core\double-conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\strtod.cc">
+      <Filter>Core\double-conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\TeeStream.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSErrorPrototype.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSErrorPrototypeST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSErrorInstance.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSErrorInstanceST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSErrorConstructor.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSErrorConstructorST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSNativeErrorConstructor.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSNativeErrorConstructorST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSNativeErrorPrototype.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSNativeErrorPrototypeST.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSErrors.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeGen\IRCodeGenAnnotationWriter.cpp">
+      <Filter>CodeGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSPropertyNameIterator.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSPropertyNameList.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\FunctionNode.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeGen\IRFunctionScope.cpp">
+      <Filter>CodeGen</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeGen\IRFunctionTable.cpp">
+      <Filter>CodeGen</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\FunctionList.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeGen\IRTypes.cpp">
+      <Filter>CodeGen</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeGen\IRExceptionHandlingHazards.cpp">
+      <Filter>CodeGen</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeGen\IRCleanup.cpp">
+      <Filter>CodeGen</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeGen\IRCleanupStack.cpp">
+      <Filter>CodeGen</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform\Win\StackInfo.cpp">
+      <Filter>Platform\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSStackBuffer.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime\JSCallFrame.cpp">
+      <Filter>Runtime</Filter>
+    </ClCompile>
+    <ClCompile Include="AST\ASTUtils.cpp">
+      <Filter>AST</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

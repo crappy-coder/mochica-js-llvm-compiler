@@ -1,0 +1,709 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_Compiler|Win32">
+      <Configuration>Debug_Compiler</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Runtime|Win32">
+      <Configuration>Debug_Runtime</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\bignum-dtoa.h" />
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\bignum.h" />
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\cached-powers.h" />
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\diy-fp.h" />
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\double-conversion.h" />
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\fast-dtoa.h" />
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\fixed-dtoa.h" />
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\ieee.h" />
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\strtod.h" />
+    <ClInclude Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\utils.h" />
+    <ClInclude Include="AST\AddExpression.h" />
+    <ClInclude Include="AST\ApplyDotFunctionCallExpression.h" />
+    <ClInclude Include="AST\ArgumentListNode.h" />
+    <ClInclude Include="AST\ArgumentsNode.h" />
+    <ClInclude Include="AST\ArrayExpression.h" />
+    <ClInclude Include="AST\AssignBracketExpression.h" />
+    <ClInclude Include="AST\AssignDotExpression.h" />
+    <ClInclude Include="AST\AssignErrorExpression.h" />
+    <ClInclude Include="AST\AssignResolveExpression.h" />
+    <ClInclude Include="AST\AST.h" />
+    <ClInclude Include="AST\ASTContext.h" />
+    <ClInclude Include="AST\ASTDecls.h" />
+    <ClInclude Include="AST\ASTUtils.h" />
+    <ClInclude Include="AST\BinaryExpression.h" />
+    <ClInclude Include="AST\BitwiseAndExpression.h" />
+    <ClInclude Include="AST\BitwiseOrExpression.h" />
+    <ClInclude Include="AST\BitwiseNotExpression.h" />
+    <ClInclude Include="AST\BitwiseXOrExpression.h" />
+    <ClInclude Include="AST\BlockStatement.h" />
+    <ClInclude Include="AST\BooleanExpression.h" />
+    <ClInclude Include="AST\BracketAccessorExpression.h" />
+    <ClInclude Include="AST\BracketFunctionCallExpression.h" />
+    <ClInclude Include="AST\BreakStatement.h" />
+    <ClInclude Include="AST\CallDotFunctionCallExpression.h" />
+    <ClInclude Include="AST\CaseBlockNode.h" />
+    <ClInclude Include="AST\CaseClauseNode.h" />
+    <ClInclude Include="AST\ClauseListNode.h" />
+    <ClInclude Include="AST\CodeFeatures.h" />
+    <ClInclude Include="AST\CommaExpression.h" />
+    <ClInclude Include="AST\ConditionalExpression.h" />
+    <ClInclude Include="AST\ConstDeclExpression.h" />
+    <ClInclude Include="AST\ConstStatement.h" />
+    <ClInclude Include="AST\ContinueStatement.h" />
+    <ClInclude Include="AST\DebuggerStatement.h" />
+    <ClInclude Include="AST\DeleteBracketExpression.h" />
+    <ClInclude Include="AST\DeleteDotExpression.h" />
+    <ClInclude Include="AST\DeleteResolveExpression.h" />
+    <ClInclude Include="AST\DeleteValueExpression.h" />
+    <ClInclude Include="AST\DivideExpression.h" />
+    <ClInclude Include="AST\DotAccessorExpression.h" />
+    <ClInclude Include="AST\DotFunctionCallExpression.h" />
+    <ClInclude Include="AST\DoWhileStatement.h" />
+    <ClInclude Include="AST\Element.h" />
+    <ClInclude Include="AST\EmptyStatement.h" />
+    <ClInclude Include="AST\EqualExpression.h" />
+    <ClInclude Include="AST\EqualStrictExpression.h" />
+    <ClInclude Include="AST\EvalFunctionCallExpression.h" />
+    <ClInclude Include="AST\EvalStatement.h" />
+    <ClInclude Include="AST\Expression.h" />
+    <ClInclude Include="AST\ExpressionStatement.h" />
+    <ClInclude Include="AST\ForInStatement.h" />
+    <ClInclude Include="AST\ForStatement.h" />
+    <ClInclude Include="AST\FunctionDeclStatement.h" />
+    <ClInclude Include="AST\FunctionExpression.h" />
+    <ClInclude Include="AST\FunctionList.h" />
+    <ClInclude Include="AST\FunctionNode.h" />
+    <ClInclude Include="AST\GreaterEqualExpression.h" />
+    <ClInclude Include="AST\GreaterExpression.h" />
+    <ClInclude Include="AST\IfElseStatement.h" />
+    <ClInclude Include="AST\IfStatement.h" />
+    <ClInclude Include="AST\InExpression.h" />
+    <ClInclude Include="AST\InstanceOfExpression.h" />
+    <ClInclude Include="AST\LabelStatement.h" />
+    <ClInclude Include="AST\LeftShiftExpression.h" />
+    <ClInclude Include="AST\LessEqualExpression.h" />
+    <ClInclude Include="AST\LessExpression.h" />
+    <ClInclude Include="AST\LogicalExpression.h" />
+    <ClInclude Include="AST\LogicalNotExpression.h" />
+    <ClInclude Include="AST\ModulusExpression.h" />
+    <ClInclude Include="AST\MultiplyExpression.h" />
+    <ClInclude Include="AST\NegateExpression.h" />
+    <ClInclude Include="AST\NewExpression.h" />
+    <ClInclude Include="AST\Node.h" />
+    <ClInclude Include="AST\NodeType.h" />
+    <ClInclude Include="AST\NotEqualExpression.h" />
+    <ClInclude Include="AST\NotEqualStrictExpression.h" />
+    <ClInclude Include="AST\NullExpression.h" />
+    <ClInclude Include="AST\NumberExpression.h" />
+    <ClInclude Include="AST\ObjectLiteralExpression.h" />
+    <ClInclude Include="AST\OpCodes.h" />
+    <ClInclude Include="AST\Operators.h" />
+    <ClInclude Include="AST\ParameterNode.h" />
+    <ClInclude Include="AST\PostfixBracketExpression.h" />
+    <ClInclude Include="AST\PostfixDotExpression.h" />
+    <ClInclude Include="AST\PostfixErrorExpression.h" />
+    <ClInclude Include="AST\PostfixResolveExpression.h" />
+    <ClInclude Include="AST\PrefixBracketExpression.h" />
+    <ClInclude Include="AST\PrefixDotExpression.h" />
+    <ClInclude Include="AST\PrefixErrorExpression.h" />
+    <ClInclude Include="AST\PrefixResolveExpression.h" />
+    <ClInclude Include="AST\PrePostResolveExpression.h" />
+    <ClInclude Include="AST\ProgramNode.h" />
+    <ClInclude Include="AST\PropertyListNode.h" />
+    <ClInclude Include="AST\PropertyNode.h" />
+    <ClInclude Include="AST\PropertyType.h" />
+    <ClInclude Include="AST\ReadModifyBracketExpression.h" />
+    <ClInclude Include="AST\ReadModifyDotExpression.h" />
+    <ClInclude Include="AST\ReadModifyResolveExpression.h" />
+    <ClInclude Include="AST\RegExExpression.h" />
+    <ClInclude Include="AST\ResolvableExpression.h" />
+    <ClInclude Include="AST\ResolveFunctionCallExpression.h" />
+    <ClInclude Include="AST\ResultKind.h" />
+    <ClInclude Include="AST\ReturnStatement.h" />
+    <ClInclude Include="AST\RightShiftExpression.h" />
+    <ClInclude Include="AST\RightShiftUnsignedExpression.h" />
+    <ClInclude Include="AST\ScopedStatement.h" />
+    <ClInclude Include="AST\Statement.h" />
+    <ClInclude Include="AST\StatementList.h" />
+    <ClInclude Include="AST\StringExpression.h" />
+    <ClInclude Include="AST\SubtractExpression.h" />
+    <ClInclude Include="AST\SwitchInfo.h" />
+    <ClInclude Include="AST\SwitchStatement.h" />
+    <ClInclude Include="AST\ThisExpression.h" />
+    <ClInclude Include="AST\ThrowableBinaryExpression.h" />
+    <ClInclude Include="AST\ThrowableExpression.h" />
+    <ClInclude Include="AST\ThrowablePrefixedSubExpression.h" />
+    <ClInclude Include="AST\ThrowableSubExpression.h" />
+    <ClInclude Include="AST\ThrowStatement.h" />
+    <ClInclude Include="AST\TryStatement.h" />
+    <ClInclude Include="AST\TypeOfResolveExpression.h" />
+    <ClInclude Include="AST\TypeOfValueExpression.h" />
+    <ClInclude Include="AST\UnaryExpression.h" />
+    <ClInclude Include="AST\UnaryPlusExpression.h" />
+    <ClInclude Include="AST\ValueFunctionCallExpression.h" />
+    <ClInclude Include="AST\VariableList.h" />
+    <ClInclude Include="AST\VarStatement.h" />
+    <ClInclude Include="AST\VoidExpression.h" />
+    <ClInclude Include="AST\WhileStatement.h" />
+    <ClInclude Include="AST\WithStatement.h" />
+    <ClInclude Include="CodeGen\IRAutoCleanupScope.h" />
+    <ClInclude Include="CodeGen\IRCleanup.h" />
+    <ClInclude Include="CodeGen\IRCleanupStack.h" />
+    <ClInclude Include="CodeGen\IRCodeGen.h" />
+    <ClInclude Include="CodeGen\IRCodeGenAnnotationWriter.h" />
+    <ClInclude Include="CodeGen\IRConsts.h" />
+    <ClInclude Include="CodeGen\IREmitter.h" />
+    <ClInclude Include="CodeGen\IRExceptionHandlingHazards.h" />
+    <ClInclude Include="CodeGen\IRFunctionAttributes.h" />
+    <ClInclude Include="CodeGen\IRFunctionScope.h" />
+    <ClInclude Include="CodeGen\IRFunctionTable.h" />
+    <ClInclude Include="CodeGen\IRFunctionType.h" />
+    <ClInclude Include="CodeGen\IRJumpDestination.h" />
+    <ClInclude Include="CodeGen\IRPerformCatchCleanup.h" />
+    <ClInclude Include="CodeGen\IRPerformFinallyCleanup.h" />
+    <ClInclude Include="CodeGen\IRScope.h" />
+    <ClInclude Include="CodeGen\IRStubEmitter.h" />
+    <ClInclude Include="CodeGen\IRType.h" />
+    <ClInclude Include="CodeGen\IRTypeBuilder.h" />
+    <ClInclude Include="CodeGen\IRTypes.h" />
+    <ClInclude Include="CodeGen\IRValue.h" />
+    <ClInclude Include="CodeGen\LLVMUtils.h" />
+    <ClInclude Include="CodeGen\StubCall.h" />
+    <ClInclude Include="CodeGen\StubNames.h" />
+    <ClInclude Include="CodeGen\SymbolTable.h" />
+    <ClInclude Include="Core\AutoBuffer.h" />
+    <ClInclude Include="Core\BasicStreamBuffer.h" />
+    <ClInclude Include="Core\Common.h" />
+    <ClInclude Include="Core\Hash.h" />
+    <ClInclude Include="Core\IID.h" />
+    <ClInclude Include="Core\MemAlloc.h" />
+    <ClInclude Include="Core\Numbers.h" />
+    <ClInclude Include="Core\StringTable.h" />
+    <ClInclude Include="Core\TeeStream.h" />
+    <ClInclude Include="Core\ValueWrapper.h" />
+    <ClInclude Include="Parser\Lexer.h" />
+    <ClInclude Include="Parser\LexerCharacterTypes.h" />
+    <ClInclude Include="Parser\Parser.h" />
+    <ClInclude Include="Parser\ParserMacros.h" />
+    <ClInclude Include="Parser\ParserScope.h" />
+    <ClInclude Include="Parser\Token.h" />
+    <ClInclude Include="Parser\TokenType.h" />
+    <ClInclude Include="Platform\Configuration.h" />
+    <ClInclude Include="Platform\Extras.h" />
+    <ClInclude Include="Platform\Libs.h" />
+    <ClInclude Include="Platform\LLVM.h" />
+    <ClInclude Include="Platform\LLVMDecls.h" />
+    <ClInclude Include="Platform\Macros.h" />
+    <ClInclude Include="Platform\StackInfo.h" />
+    <ClInclude Include="Platform\Types.h" />
+    <ClInclude Include="Platform\Win\Platform.h" />
+    <ClInclude Include="Platform\Win\PlatformConfiguration.h" />
+    <ClInclude Include="Runtime\BitOps.h" />
+    <ClInclude Include="Runtime\GlobalContext.h" />
+    <ClInclude Include="Runtime\JSBooleanConstructor.h" />
+    <ClInclude Include="Runtime\JSBooleanInstance.h" />
+    <ClInclude Include="Runtime\JSBooleanPrototype.h" />
+    <ClInclude Include="Runtime\JSCallFrame.h" />
+    <ClInclude Include="Runtime\JSClassFunctionTable.h" />
+    <ClInclude Include="Runtime\JSClassInfo.h" />
+    <ClInclude Include="Runtime\JSConstructorFunction.h" />
+    <ClInclude Include="Runtime\JSConvert.h" />
+    <ClInclude Include="Runtime\JSErrorConstructor.h" />
+    <ClInclude Include="Runtime\JSErrorInstance.h" />
+    <ClInclude Include="Runtime\JSErrorPrototype.h" />
+    <ClInclude Include="Runtime\JSErrors.h" />
+    <ClInclude Include="Runtime\JSErrorType.h" />
+    <ClInclude Include="Runtime\JSExecutionEnvironment.h" />
+    <ClInclude Include="Runtime\JSFunction.h" />
+    <ClInclude Include="Runtime\JSFunctionConstructor.h" />
+    <ClInclude Include="Runtime\JSFunctionPrototype.h" />
+    <ClInclude Include="Runtime\JSGetterSetter.h" />
+    <ClInclude Include="Runtime\JSGlobalObject.h" />
+    <ClInclude Include="Runtime\JSList.h" />
+    <ClInclude Include="Runtime\JSNativeErrorConstructor.h" />
+    <ClInclude Include="Runtime\JSNativeErrorPrototype.h" />
+    <ClInclude Include="Runtime\JSNativeExceptionData.h" />
+    <ClInclude Include="Runtime\JSNativeExceptionHandler.h" />
+    <ClInclude Include="Runtime\JSNativeStackFrame.h" />
+    <ClInclude Include="Runtime\JSNativeStubArgument.h" />
+    <ClInclude Include="Runtime\JSNumberConstructor.h" />
+    <ClInclude Include="Runtime\JSNumberInstance.h" />
+    <ClInclude Include="Runtime\JSNumberPrototype.h" />
+    <ClInclude Include="Runtime\JSNumericStringCache.h" />
+    <ClInclude Include="Runtime\JSObjectConstructor.h" />
+    <ClInclude Include="Runtime\JSObjectEnvironment.h" />
+    <ClInclude Include="Runtime\JSObjectPrototype.h" />
+    <ClInclude Include="Runtime\JSPropertyAttributes.h" />
+    <ClInclude Include="Runtime\JSPropertyDescriptor.h" />
+    <ClInclude Include="Runtime\JSPropertyMap.h" />
+    <ClInclude Include="Runtime\JSPropertyNameIterator.h" />
+    <ClInclude Include="Runtime\JSPropertyNameList.h" />
+    <ClInclude Include="Runtime\JSPropertySlot.h" />
+    <ClInclude Include="Runtime\JSPutPropertySlot.h" />
+    <ClInclude Include="Runtime\JSScriptEnvironment.h" />
+    <ClInclude Include="Runtime\JSSmallStrings.h" />
+    <ClInclude Include="Runtime\JSStackBuffer.h" />
+    <ClInclude Include="Runtime\JSString.h" />
+    <ClInclude Include="Runtime\JSStringConstructor.h" />
+    <ClInclude Include="Runtime\JSStringInstance.h" />
+    <ClInclude Include="Runtime\JSStringPrototype.h" />
+    <ClInclude Include="Runtime\JSStringRope.h" />
+    <ClInclude Include="Runtime\JSStrings.h" />
+    <ClInclude Include="Runtime\JSStubDefs.h" />
+    <ClInclude Include="Runtime\JSObject.h" />
+    <ClInclude Include="Runtime\JSStackFrame.h" />
+    <ClInclude Include="Runtime\JSTypePreference.h" />
+    <ClInclude Include="Runtime\JSValue.h" />
+    <ClInclude Include="Runtime\JSValueData.h" />
+    <ClInclude Include="Runtime\JSValueTags.h" />
+    <ClInclude Include="Runtime\JSObjectType.h" />
+    <ClInclude Include="Runtime\JSValueWrapper.h" />
+    <ClInclude Include="Runtime\JSWrappedObject.h" />
+    <ClInclude Include="Runtime\KnownIdentifierNames.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Runtime|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Compiler|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Runtime\KnownIdentifiers.h" />
+    <ClInclude Include="Runtime\JSClassPropertyTable.h" />
+    <ClInclude Include="Runtime\SourceCode.h" />
+    <ClInclude Include="Runtime\Tables\JSBooleanPrototypeTable.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Runtime|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Compiler|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Runtime\Tables\JSErrorPrototypeTable.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Runtime|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Runtime\Tables\JSGlobalObjectTable.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Runtime|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Compiler|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Runtime\Tables\JSNumberConstructorTable.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Runtime|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Compiler|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Runtime\Tables\JSNumberPrototypeTable.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Runtime|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Compiler|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Runtime\Tables\JSObjectConstructorTable.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Runtime|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Compiler|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Runtime\Tables\JSObjectPrototypeTable.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Runtime|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Compiler|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Runtime\Tables\JSStringConstructorTable.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Runtime|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Compiler|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Runtime\Tables\JSStringPrototypeTable.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Runtime|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_Compiler|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Text\ASCII.h" />
+    <ClInclude Include="Text\Text.h" />
+    <ClInclude Include="Text\Unicode.h" />
+    <ClInclude Include="Text\UTF8String.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\bignum-dtoa.cc" />
+    <ClCompile Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\bignum.cc" />
+    <ClCompile Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\cached-powers.cc" />
+    <ClCompile Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\diy-fp.cc" />
+    <ClCompile Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\double-conversion.cc" />
+    <ClCompile Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\fast-dtoa.cc" />
+    <ClCompile Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\fixed-dtoa.cc" />
+    <ClCompile Include="..\..\libs\double-conversion-1.1.1\include\double-conversion\strtod.cc" />
+    <ClCompile Include="AST\AddExpression.cpp" />
+    <ClCompile Include="AST\ApplyDotFunctionCallExpression.cpp" />
+    <ClCompile Include="AST\ArgumentListNode.cpp" />
+    <ClCompile Include="AST\ArgumentsNode.cpp" />
+    <ClCompile Include="AST\ArrayExpression.cpp" />
+    <ClCompile Include="AST\AssignBracketExpression.cpp" />
+    <ClCompile Include="AST\AssignDotExpression.cpp" />
+    <ClCompile Include="AST\AssignErrorExpression.cpp" />
+    <ClCompile Include="AST\AssignResolveExpression.cpp" />
+    <ClCompile Include="AST\ASTContext.cpp" />
+    <ClCompile Include="AST\ASTUtils.cpp" />
+    <ClCompile Include="AST\BinaryExpression.cpp" />
+    <ClCompile Include="AST\BitwiseAndExpression.cpp" />
+    <ClCompile Include="AST\BitwiseOrExpression.cpp" />
+    <ClCompile Include="AST\BitwiseNotExpression.cpp" />
+    <ClCompile Include="AST\BitwiseXOrExpression.cpp" />
+    <ClCompile Include="AST\BlockStatement.cpp" />
+    <ClCompile Include="AST\BooleanExpression.cpp" />
+    <ClCompile Include="AST\BracketAccessorExpression.cpp" />
+    <ClCompile Include="AST\BracketFunctionCallExpression.cpp" />
+    <ClCompile Include="AST\BreakStatement.cpp" />
+    <ClCompile Include="AST\CallDotFunctionCallExpression.cpp" />
+    <ClCompile Include="AST\CaseBlockNode.cpp" />
+    <ClCompile Include="AST\CaseClauseNode.cpp" />
+    <ClCompile Include="AST\ClauseListNode.cpp" />
+    <ClCompile Include="AST\CommaExpression.cpp" />
+    <ClCompile Include="AST\ConditionalExpression.cpp" />
+    <ClCompile Include="AST\ConstDeclExpression.cpp" />
+    <ClCompile Include="AST\ConstStatement.cpp" />
+    <ClCompile Include="AST\ContinueStatement.cpp" />
+    <ClCompile Include="AST\DebuggerStatement.cpp" />
+    <ClCompile Include="AST\DeleteBracketExpression.cpp" />
+    <ClCompile Include="AST\DeleteDotExpression.cpp" />
+    <ClCompile Include="AST\DeleteResolveExpression.cpp" />
+    <ClCompile Include="AST\DeleteValueExpression.cpp" />
+    <ClCompile Include="AST\DivideExpression.cpp" />
+    <ClCompile Include="AST\DotAccessorExpression.cpp" />
+    <ClCompile Include="AST\DotFunctionCallExpression.cpp" />
+    <ClCompile Include="AST\DoWhileStatement.cpp" />
+    <ClCompile Include="AST\Element.cpp" />
+    <ClCompile Include="AST\EmptyStatement.cpp" />
+    <ClCompile Include="AST\EqualExpression.cpp" />
+    <ClCompile Include="AST\EqualStrictExpression.cpp" />
+    <ClCompile Include="AST\EvalFunctionCallExpression.cpp" />
+    <ClCompile Include="AST\EvalStatement.cpp" />
+    <ClCompile Include="AST\ExpressionStatement.cpp" />
+    <ClCompile Include="AST\ForInStatement.cpp" />
+    <ClCompile Include="AST\ForStatement.cpp" />
+    <ClCompile Include="AST\FunctionDeclStatement.cpp" />
+    <ClCompile Include="AST\FunctionExpression.cpp" />
+    <ClCompile Include="AST\FunctionList.cpp" />
+    <ClCompile Include="AST\FunctionNode.cpp" />
+    <ClCompile Include="AST\GreaterEqualExpression.cpp" />
+    <ClCompile Include="AST\GreaterExpression.cpp" />
+    <ClCompile Include="AST\IfElseStatement.cpp" />
+    <ClCompile Include="AST\IfStatement.cpp" />
+    <ClCompile Include="AST\InExpression.cpp" />
+    <ClCompile Include="AST\InstanceOfExpression.cpp" />
+    <ClCompile Include="AST\LabelStatement.cpp" />
+    <ClCompile Include="AST\LeftShiftExpression.cpp" />
+    <ClCompile Include="AST\LessEqualExpression.cpp" />
+    <ClCompile Include="AST\LessExpression.cpp" />
+    <ClCompile Include="AST\LogicalExpression.cpp" />
+    <ClCompile Include="AST\LogicalNotExpression.cpp" />
+    <ClCompile Include="AST\ModulusExpression.cpp" />
+    <ClCompile Include="AST\MultiplyExpression.cpp" />
+    <ClCompile Include="AST\NegateExpression.cpp" />
+    <ClCompile Include="AST\NewExpression.cpp" />
+    <ClCompile Include="AST\NotEqualExpression.cpp" />
+    <ClCompile Include="AST\NotEqualStrictExpression.cpp" />
+    <ClCompile Include="AST\NumberExpression.cpp" />
+    <ClCompile Include="AST\ObjectLiteralExpression.cpp" />
+    <ClCompile Include="AST\ParameterNode.cpp" />
+    <ClCompile Include="AST\PostfixBracketExpression.cpp" />
+    <ClCompile Include="AST\PostfixDotExpression.cpp" />
+    <ClCompile Include="AST\PostfixErrorExpression.cpp" />
+    <ClCompile Include="AST\PostfixResolveExpression.cpp" />
+    <ClCompile Include="AST\PrefixBracketExpression.cpp" />
+    <ClCompile Include="AST\PrefixDotExpression.cpp" />
+    <ClCompile Include="AST\PrefixErrorExpression.cpp" />
+    <ClCompile Include="AST\PrefixResolveExpression.cpp" />
+    <ClCompile Include="AST\PrePostResolveExpression.cpp" />
+    <ClCompile Include="AST\ProgramNode.cpp" />
+    <ClCompile Include="AST\PropertyListNode.cpp" />
+    <ClCompile Include="AST\PropertyNode.cpp" />
+    <ClCompile Include="AST\ReadModifyBracketExpression.cpp" />
+    <ClCompile Include="AST\ReadModifyDotExpression.cpp" />
+    <ClCompile Include="AST\ReadModifyResolveExpression.cpp" />
+    <ClCompile Include="AST\RegExExpression.cpp" />
+    <ClCompile Include="AST\ResolveFunctionCallExpression.cpp" />
+    <ClCompile Include="AST\ReturnStatement.cpp" />
+    <ClCompile Include="AST\RightShiftExpression.cpp" />
+    <ClCompile Include="AST\RightShiftUnsignedExpression.cpp" />
+    <ClCompile Include="AST\ScopedStatement.cpp" />
+    <ClCompile Include="AST\Statement.cpp" />
+    <ClCompile Include="AST\StringExpression.cpp" />
+    <ClCompile Include="AST\SubtractExpression.cpp" />
+    <ClCompile Include="AST\SwitchStatement.cpp" />
+    <ClCompile Include="AST\ThrowableBinaryExpression.cpp" />
+    <ClCompile Include="AST\ThrowStatement.cpp" />
+    <ClCompile Include="AST\TryStatement.cpp" />
+    <ClCompile Include="AST\TypeOfResolveExpression.cpp" />
+    <ClCompile Include="AST\TypeOfValueExpression.cpp" />
+    <ClCompile Include="AST\UnaryExpression.cpp" />
+    <ClCompile Include="AST\UnaryPlusExpression.cpp" />
+    <ClCompile Include="AST\ValueFunctionCallExpression.cpp" />
+    <ClCompile Include="AST\VarStatement.cpp" />
+    <ClCompile Include="AST\VoidExpression.cpp" />
+    <ClCompile Include="AST\WhileStatement.cpp" />
+    <ClCompile Include="AST\WithStatement.cpp" />
+    <ClCompile Include="CodeGen\IRCleanup.cpp" />
+    <ClCompile Include="CodeGen\IRCleanupStack.cpp" />
+    <ClCompile Include="CodeGen\IRCodeGen.cpp" />
+    <ClCompile Include="CodeGen\IRCodeGenAnnotationWriter.cpp" />
+    <ClCompile Include="CodeGen\IRConsts.cpp" />
+    <ClCompile Include="CodeGen\IREmitter.cpp">
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</PreprocessToFile>
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Debug_Runtime|Win32'">false</PreprocessToFile>
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Debug_Compiler|Win32'">false</PreprocessToFile>
+    </ClCompile>
+    <ClCompile Include="CodeGen\IREmitterAST.cpp" />
+    <ClCompile Include="CodeGen\IRExceptionHandlingHazards.cpp" />
+    <ClCompile Include="CodeGen\IRFunctionScope.cpp" />
+    <ClCompile Include="CodeGen\IRFunctionTable.cpp" />
+    <ClCompile Include="CodeGen\IRStubEmitter.cpp" />
+    <ClCompile Include="CodeGen\IRTypeBuilder.cpp" />
+    <ClCompile Include="CodeGen\IRTypes.cpp" />
+    <ClCompile Include="CodeGen\SymbolTable.cpp" />
+    <ClCompile Include="Core\Hash.cpp" />
+    <ClCompile Include="Core\Numbers.cpp" />
+    <ClCompile Include="Core\StringTable.cpp" />
+    <ClCompile Include="Core\TeeStream.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Parser\Lexer.cpp" />
+    <ClCompile Include="Parser\Parser.cpp" />
+    <ClCompile Include="Platform\Extras.cpp" />
+    <ClCompile Include="Platform\Win\StackInfo.cpp" />
+    <ClCompile Include="Runtime\GlobalContext.cpp" />
+    <ClCompile Include="Runtime\JSBooleanConstructor.cpp" />
+    <ClCompile Include="Runtime\JSBooleanConstructorST.cpp" />
+    <ClCompile Include="Runtime\JSBooleanInstance.cpp" />
+    <ClCompile Include="Runtime\JSBooleanInstanceST.cpp" />
+    <ClCompile Include="Runtime\JSBooleanPrototype.cpp" />
+    <ClCompile Include="Runtime\JSBooleanPrototypeST.cpp" />
+    <ClCompile Include="Runtime\JSCallFrame.cpp" />
+    <ClCompile Include="Runtime\JSConstructorFunctionST.cpp" />
+    <ClCompile Include="Runtime\JSErrorConstructor.cpp" />
+    <ClCompile Include="Runtime\JSErrorConstructorST.cpp" />
+    <ClCompile Include="Runtime\JSErrorInstance.cpp" />
+    <ClCompile Include="Runtime\JSErrorInstanceST.cpp" />
+    <ClCompile Include="Runtime\JSErrorPrototype.cpp" />
+    <ClCompile Include="Runtime\JSErrorPrototypeST.cpp" />
+    <ClCompile Include="Runtime\JSErrors.cpp" />
+    <ClCompile Include="Runtime\JSExecutionEnvironment.cpp" />
+    <ClCompile Include="Runtime\JSFunction.cpp" />
+    <ClCompile Include="Runtime\JSFunctionConstructor.cpp" />
+    <ClCompile Include="Runtime\JSFunctionConstructorST.cpp" />
+    <ClCompile Include="Runtime\JSFunctionST.cpp" />
+    <ClCompile Include="Runtime\JSGetterSetter.cpp" />
+    <ClCompile Include="Runtime\JSNativeErrorConstructor.cpp" />
+    <ClCompile Include="Runtime\JSNativeErrorConstructorST.cpp" />
+    <ClCompile Include="Runtime\JSNativeErrorPrototype.cpp" />
+    <ClCompile Include="Runtime\JSNativeErrorPrototypeST.cpp" />
+    <ClCompile Include="Runtime\JSNumberConstructorST.cpp" />
+    <ClCompile Include="Runtime\JSNumberInstance.cpp" />
+    <ClCompile Include="Runtime\JSNumberInstanceST.cpp" />
+    <ClCompile Include="Runtime\JSNumberPrototypeST.cpp" />
+    <ClCompile Include="Runtime\JSObjectConstructor.cpp" />
+    <ClCompile Include="Runtime\JSObjectConstructorST.cpp" />
+    <ClCompile Include="Runtime\JSObjectEnvironment.cpp" />
+    <ClCompile Include="Runtime\JSObjectST.cpp" />
+    <ClCompile Include="Runtime\JSPropertyDescriptor.cpp" />
+    <ClCompile Include="Runtime\JSPropertyMap.cpp" />
+    <ClCompile Include="Runtime\JSPropertyNameIterator.cpp" />
+    <ClCompile Include="Runtime\JSPropertyNameList.cpp" />
+    <ClCompile Include="Runtime\JSPropertySlot.cpp" />
+    <ClCompile Include="Runtime\JSScriptEnvironment.cpp" />
+    <ClCompile Include="Runtime\JSConstructorFunction.cpp" />
+    <ClCompile Include="Runtime\JSConvert.cpp" />
+    <ClCompile Include="Runtime\JSFunctionPrototype.cpp" />
+    <ClCompile Include="Runtime\JSGlobalObject.cpp" />
+    <ClCompile Include="Runtime\JSGlobalObjectST.cpp" />
+    <ClCompile Include="Runtime\JSNumberConstructor.cpp" />
+    <ClCompile Include="Runtime\JSNumberPrototype.cpp" />
+    <ClCompile Include="Runtime\JSObject.cpp" />
+    <ClCompile Include="Runtime\JSObjectPrototype.cpp" />
+    <ClCompile Include="Runtime\JSSmallStrings.cpp" />
+    <ClCompile Include="Runtime\JSStackBuffer.cpp" />
+    <ClCompile Include="Runtime\JSStackFrame.cpp" />
+    <ClCompile Include="Runtime\JSString.cpp" />
+    <ClCompile Include="Runtime\JSStringConstructor.cpp" />
+    <ClCompile Include="Runtime\JSStringConstructorST.cpp" />
+    <ClCompile Include="Runtime\JSStringInstance.cpp" />
+    <ClCompile Include="Runtime\JSStringInstanceST.cpp" />
+    <ClCompile Include="Runtime\JSStringPrototype.cpp" />
+    <ClCompile Include="Runtime\JSStringPrototypeST.cpp" />
+    <ClCompile Include="Runtime\JSStringRope.cpp" />
+    <ClCompile Include="Runtime\JSStringRopeST.cpp" />
+    <ClCompile Include="Runtime\JSStringST.cpp" />
+    <ClCompile Include="Runtime\JSValue.cpp" />
+    <ClCompile Include="Runtime\JSValueST.cpp" />
+    <ClCompile Include="Runtime\JSWrappedObject.cpp" />
+    <ClCompile Include="Runtime\KnownIdentifiers.cpp" />
+    <ClCompile Include="Runtime\JSClassPropertyTable.cpp" />
+    <ClCompile Include="Runtime\SourceCode.cpp" />
+    <ClCompile Include="Text\Unicode.cpp" />
+    <ClCompile Include="Text\UTF8String.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D20E864B-F824-4F10-BF87-35D6055CE1FF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MoCompiler</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Runtime|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Compiler|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Runtime|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Compiler|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\build\tools\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>C:\Program Files (x86)\LLVM\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Runtime|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\build\tools\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>C:\Program Files (x86)\LLVM\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Compiler|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\build\tools\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>C:\Program Files (x86)\LLVM\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;POCO_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\libs\double-conversion-1.1.1\include;$(ProjectDir)..\..\libs\poco\poco-1.4.2p1\Foundation\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <PreprocessToFile>false</PreprocessToFile>
+      <AdditionalOptions>/MP4 %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\LLVM\lib;$(ProjectDir)..\..\libs\poco\poco-1.4.2p1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LLVMBitReader.lib;LLVMBitWriter.lib;LLVMCodeGen.lib;LLVMCore.lib;LLVMIRReader.lib;LLVMLinker.lib;LLVMObject.lib;LLVMSupport.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TurnOffAssemblyGeneration>
+      </TurnOffAssemblyGeneration>
+      <LinkErrorReporting>NoErrorReport</LinkErrorReporting>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Runtime|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;POCO_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\libs\double-conversion-1.1.1\include;$(ProjectDir)..\..\libs\poco\poco-1.4.2p1\Foundation\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <PreprocessToFile>false</PreprocessToFile>
+      <AdditionalOptions>/MP4 %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\LLVM\lib;$(ProjectDir)..\..\libs\poco\poco-1.4.2p1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LLVMBitReader.lib;LLVMBitWriter.lib;LLVMCodeGen.lib;LLVMCore.lib;LLVMIRReader.lib;LLVMLinker.lib;LLVMObject.lib;LLVMSupport.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TurnOffAssemblyGeneration>
+      </TurnOffAssemblyGeneration>
+      <LinkErrorReporting>NoErrorReport</LinkErrorReporting>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Compiler|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;POCO_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\libs\double-conversion-1.1.1\include;$(ProjectDir)..\..\libs\poco\poco-1.4.2p1\Foundation\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <PreprocessToFile>false</PreprocessToFile>
+      <AdditionalOptions>/MP4 %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\LLVM\lib;$(ProjectDir)..\..\libs\poco\poco-1.4.2p1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LLVMBitReader.lib;LLVMBitWriter.lib;LLVMCodeGen.lib;LLVMCore.lib;LLVMIRReader.lib;LLVMLinker.lib;LLVMObject.lib;LLVMSupport.lib;LLVMAnalysis.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TurnOffAssemblyGeneration>
+      </TurnOffAssemblyGeneration>
+      <LinkErrorReporting>NoErrorReport</LinkErrorReporting>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

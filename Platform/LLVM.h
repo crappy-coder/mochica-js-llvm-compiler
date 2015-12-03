@@ -1,0 +1,42 @@
+#ifndef MOENJIN_PLATFORM_LLVM_H
+#define MOENJIN_PLATFORM_LLVM_H
+
+#include <llvm/ADT/ArrayRef.h>
+#include <llvm/ADT/SmallVector.h>
+#include <llvm/Bitcode/ReaderWriter.h>
+#include <llvm/IR/Argument.h>
+#include <llvm/IR/Attributes.h>
+#include <llvm/IR/BasicBlock.h>
+#include <llvm/IR/CallingConv.h>
+#include <llvm/IR/Constants.h>
+#include <llvm/IR/DerivedTypes.h>
+#include <llvm/IR/Function.h>
+#include <llvm/IR/GlobalAlias.h>
+#include <llvm/IR/GlobalValue.h>
+#include <llvm/IR/GlobalVariable.h>
+#include <llvm/IR/InstrTypes.h>
+#include <llvm/IR/Instruction.h>
+#include <llvm/IR/Instructions.h>
+#include <llvm/IR/IntrinsicInst.h>
+#include <llvm/IR/Intrinsics.h>
+#include <llvm/IR/IRBuilder.h>
+#include <llvm/IR/LLVMContext.h>
+#include <llvm/IR/LLVMContext.h>
+#include <llvm/IR/Module.h>
+#include <llvm/IR/OperandTraits.h>
+#include <llvm/IR/Operator.h>
+#include <llvm/IR/SymbolTableListTraits.h>
+#include <llvm/IR/Type.h>
+#include <llvm/IR/TypeBuilder.h>
+#include <llvm/IR/TypeFinder.h>
+#include <llvm/IR/Use.h>
+#include <llvm/IR/User.h>
+#include <llvm/IR/Value.h>
+#include <llvm/IR/ValueSymbolTable.h>
+#include <llvm/Support/CFG.h>
+#include <llvm/Support/Format.h>
+#include <llvm/Support/MemoryBuffer.h>
+#include <llvm/Support/raw_ostream.h>
+#include <llvm/Support/system_error.h>
+
+#endif
